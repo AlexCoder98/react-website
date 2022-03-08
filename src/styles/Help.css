@@ -1,0 +1,77 @@
+.help {
+  text-align: center;
+  color: #1e3737;
+}
+
+.help p {
+  margin: 5% 0;
+  text-align: justify;
+}
+
+.help .second {
+  width: 100%;
+  display: flex;
+}
+
+.help .second .form {
+  width: 50%;
+  text-align: center;
+}
+
+.help .second .messages,
+.help .second .ifNo {
+  width: 50%;
+}
+
+.help .second .ifNo {
+  margin: auto;
+}
+
+@media (max-width: 1440px) {
+  .help p {
+    margin: 4% 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .help .first h1 {
+    font-size: 32px;
+  }
+
+  .help .second {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .help {
+    margin-top: 5%;
+  }
+
+  .help p {
+    margin: 5% 0 10%;
+  }
+
+  .help .second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .help .second .form {
+    width: 100%;
+  }
+
+  .help .second .messages {
+    width: 100%;
+  }
+
+  .help .second .messages,
+  .help .second .ifNo {
+    margin: 15% auto 5%;
+  }
+
+  .help .second .ifNo {
+    width: 80%;
+  }
+}

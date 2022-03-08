@@ -1,0 +1,154 @@
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 30vh;
+}
+
+.search h3 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.search form {
+  margin-top: 5%;
+  display: flex;
+}
+
+.search form input,
+.search form button {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+  border: 3px solid #1e3737;
+  border-radius: 15px;
+}
+
+.search form input:focus {
+  background-color: #70be2a;
+  border: 3px solid #1e3737;
+  color: #1e3737;
+}
+
+.search form button {
+  margin-left: 3%;
+  cursor: pointer;
+  background-color: #70be2a;
+  color: #1e3737;
+}
+
+.search form button:hover {
+  box-shadow: 0 0 5px 2px #1e3737;
+}
+
+.foundProductList {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.foundProductList .foundProduct {
+  margin: 0 auto 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.foundProductList .foundProduct h3 {
+  font-size: 22px;
+}
+
+.foundProductList .foundProduct button {
+  margin-left: 3%;
+  padding: 10px 10px;
+  border: 3px solid #1e3737;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #70be2a;
+  color: #1e3737;
+  transition: 0.3s;
+}
+
+.foundProductList .foundProduct button:hover {
+  background-color: #1e3737;
+  color: #70be2a;
+}
+
+.noFound {
+  text-align: center;
+  font-size: 32px;
+}
+
+@media (max-width: 1440px) {
+  .search h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .search form button {
+    padding: 7px;
+  }
+
+  .foundProductList {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .foundProductList .foundProduct h3 {
+    font-size: 20px;
+  }
+
+  .foundProductList .foundProduct button {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .search h3 {
+    font-size: 28px;
+  }
+
+  .search form button {
+    padding: 5px;
+  }
+
+  .foundProductList .foundProduct h3 {
+    font-size: 20px;
+  }
+
+  .foundProductList .foundProduct button {
+    padding: 7px;
+  }
+
+  .noFound {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    margin-top: 20%;
+  }
+
+  .search h3 {
+    font-size: 26px;
+  }
+
+  .foundProductList {
+    width: 80%;
+  }
+
+  .foundProductList .foundProduct h3 {
+    font-size: 20px;
+  }
+
+  .foundProductList .foundProduct button {
+    margin-left: 3%;
+  }
+
+  .noFound {
+    font-size: 26px;
+  }
+}

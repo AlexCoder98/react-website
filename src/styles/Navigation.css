@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  margin-bottom: 5%;
+  background-color: #70be2a;
+}
+
+.menu a {
+  width: 15%;
+  flex-grow: 1;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #1e3737;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #1e3737;
+  color: #70be2a;
+}
+
+@media (max-width: 1440px) {
+  .menu a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu > a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .menu a {
+    width: 50%;
+  }
+}

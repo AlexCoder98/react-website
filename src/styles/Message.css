@@ -1,0 +1,48 @@
+.message div {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+.message div {
+  text-align: left;
+}
+
+.message div h4 {
+  font-size: 20px;
+}
+
+.message div address {
+  font-size: 14px;
+}
+
+.message div p {
+  text-align: justify;
+}
+
+.message .remBtn {
+  margin: 5% auto 0;
+  border-radius: 15px;
+  border: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 15px;
+  color: #1e3737;
+  background-color: #70be2a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.message .remBtn:hover {
+  color: #70be2a;
+  background-color: #1e3737;
+}
+
+@media (max-width: 1024px) {
+  .message .remBtn {
+    padding: 10px 15px;
+  }
+}

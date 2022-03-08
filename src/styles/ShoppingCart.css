@@ -1,0 +1,114 @@
+.shop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #1e3737;
+}
+
+.shop h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  margin: 5% 0;
+}
+
+.shop article {
+  width: 30%;
+  margin-bottom: 2%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop .photoContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.shop h4 {
+  margin: 0 auto 4%;
+  padding: 10px 15px;
+  font-size: 28px;
+}
+
+.shop p:nth-of-type(1) {
+  margin: 4% auto 3%;
+  text-align: justify;
+}
+
+.shop p:nth-of-type(2) {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.shop button {
+  margin: 10% auto 0;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  background-color: #70be2a;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.shop .goShop {
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.shop button:hover {
+  background-color: #1e3737;
+  color: #70be2a;
+}
+
+@media (max-width: 1024px) {
+  .shop h2 {
+    font-size: 26px;
+    margin: 10% 0;
+  }
+
+  .shop article {
+    width: 45%;
+  }
+
+  .shop h4 {
+    padding: none;
+    font-size: 28px;
+  }
+
+  .shop .goShop {
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop {
+    margin-top: 5%;
+    flex-direction: column;
+    min-height: 55vh;
+  }
+
+  .shop article {
+    width: 90%;
+    margin: 0 auto 2%;
+  }
+
+  .shop p:nth-of-type(1) {
+    margin: 4% auto 3%;
+    text-align: justify;
+  }
+
+  .shop button {
+    margin: 7% auto 5%;
+    font-size: 16px;
+  }
+
+  .shop .goShop {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

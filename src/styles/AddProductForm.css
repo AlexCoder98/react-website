@@ -1,0 +1,82 @@
+.add {
+  width: 30%;
+  margin: 5% auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1e3737;
+}
+
+.add h3 {
+  padding: 5% 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.add div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.add div label {
+  margin: 0 0 2px 5px;
+}
+
+.add div input,
+.add div textarea {
+  padding: 5px;
+}
+
+.add div input,
+.add div textarea {
+  border: 3px solid #1e3737;
+  border-radius: 15px;
+}
+
+.add div input:focus,
+.add div textarea:focus {
+  background-color: #70be2a;
+}
+
+.add div textarea::placeholder {
+  color: #1e3737;
+}
+
+.add button {
+  margin: 5% 0;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  color: #1e3737;
+  background-color: #70be2a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add button:hover {
+  background-color: #1e3737;
+  color: #70be2a;
+}
+
+@media (max-width: 1440px) {
+  .add {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .add {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .add {
+    width: 60%;
+    margin: 10% auto;
+  }
+}

@@ -1,0 +1,100 @@
+.productList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #1e3737;
+}
+
+.productList article {
+  width: 30%;
+  margin-bottom: 2%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.productList .photoContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.productList h4 {
+  margin: 0 auto 4%;
+  padding: 10px 15px;
+  font-size: 28px;
+}
+
+.productList .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.productList .buttons button {
+  padding: 15px 25px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  background-color: #70be2a;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.productList .buttons button:hover {
+  background-color: #1e3737;
+  color: #70be2a;
+}
+
+.productList p:nth-of-type(1) {
+  margin: 4% auto 3%;
+  text-align: justify;
+}
+
+.productList .price {
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media (max-width: 1440px) {
+  .productList article {
+    width: 32%;
+  }
+
+  .productList h4 {
+    margin: 0 auto 3%;
+    font-size: 26px;
+  }
+
+  .productList .buttons {
+    margin-top: 10%;
+  }
+
+  .productList .buttons button {
+    padding: 12px 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .productList article {
+    width: 45%;
+  }
+
+  .productList .buttons button {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productList article {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .productList .buttons button {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,21 @@
+.productMenu {
+  width: 80%;
+  margin: 0 auto 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.productMenu > * {
+  flex-grow: 1;
+  padding: 15px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1e3737;
+}
+@media (max-width: 1024px) {
+  .productMenu {
+    margin: 5% auto;
+  }
+}

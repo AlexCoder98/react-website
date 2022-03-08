@@ -1,0 +1,75 @@
+.artInf {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  color: #1e3737;
+}
+
+.artInf h2 {
+  font-size: 30px;
+}
+
+.artInf address {
+  margin: 1% 0 4%;
+}
+
+.artInf .artImg {
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto 3%;
+  background-position: center;
+  background-size: cover;
+}
+
+.artInf p {
+  text-align: justify;
+  text-indent: 10px;
+}
+
+.artInf p:nth-of-type(2) {
+  margin-top: 3%;
+}
+
+.artInf button {
+  display: block;
+  margin: 10% auto 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  background-color: #70be2a;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.artInf button:hover {
+  background-color: #1e3737;
+  color: #70be2a;
+}
+
+@media (max-width: 1024px) {
+  .artInf {
+    width: 95%;
+  }
+
+  .artInf h2 {
+    font-size: 28px;
+  }
+
+  .artInf button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .artInf {
+    margin: 5% auto 0;
+    width: 100%;
+  }
+
+  .artInf h2 {
+    font-size: 26px;
+  }
+}

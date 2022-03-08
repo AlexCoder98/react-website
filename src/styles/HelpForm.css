@@ -1,0 +1,77 @@
+.helpForm {
+  width: 60%;
+  margin-left: 10%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.helpForm div input,
+.helpForm div textarea {
+  border: 3px solid #1e3737;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.helpForm h2 {
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.helpForm div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.helpForm div label {
+  margin: 0 0 2px 5px;
+  text-align: left;
+}
+
+.helpForm div textarea::placeholder {
+  color: #1e3737;
+}
+
+.helpForm div input:focus,
+.helpForm div textarea:focus {
+  background-color: #70be2a;
+}
+
+.helpForm button {
+  margin: 5% auto 0;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  color: #1e3737;
+  background-color: #70be2a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.helpForm button:hover {
+  color: #70be2a;
+  background-color: #1e3737;
+}
+
+@media (max-width: 1440px) {
+  .helpForm h2 {
+    margin-bottom: 2%;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .helpForm {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .helpForm button {
+    font-size: 14px;
+  }
+}
